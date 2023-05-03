@@ -19,7 +19,7 @@ class URLtoJARMHash(IPtoJARMHash):
 
     @classmethod
     def create_entities(cls, request: MaltegoMsg, response: MaltegoTransform):
-        host_url = request.getProperty("url")
+        host_url = request.getProperty("theurl")
         host_url = urlparse(host_url)
         results = cls.scan_ip_or_domain(host_url.hostname, host_url.port)
         cls.create_jarm_hash(response=response, results=results)
