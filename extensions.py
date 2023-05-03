@@ -9,6 +9,7 @@ from modules.maltemate.extensions import maltemate_registry
 from modules.wigle.extensions import wigle_registry
 from modules.nmap.extensions import nmap_registry
 from modules.NERV.extensions import NERV_registry
+from modules.jarm.extensions import jarm_registry
 
 registry = MetaRegistry()
 registry.include_registry("cisa", cisa_registry)
@@ -21,6 +22,7 @@ registry.include_registry("maltemate", maltemate_registry)
 registry.include_registry("wigle", wigle_registry)
 registry.include_registry("nmap", nmap_registry)
 registry.include_registry("NERV", NERV_registry)
+registry.include_registry("jarm", jarm_registry)
 
 # The rest of these attributes are optional
 

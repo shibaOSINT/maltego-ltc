@@ -8,3 +8,4 @@ cachetools~=5.2.0
 -r modules/maltemate/requirements.txt
 -r modules/nmap/requirements.txt
 -r modules/NERV/requirements.txt
+-r modules/jarm/requirements.txt
